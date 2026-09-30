@@ -10,7 +10,6 @@ const perguntas = [{
         ],
         correta: "b"
     },
-    // Você pode adicionar mais perguntas seguindo este mesmo formato:
     {
         categoria: "Eletrônicos",
         pergunta: "O que deve ser feito antes de descartar um celular velho?",
@@ -53,7 +52,7 @@ const perguntas = [{
             { id: "b", texto: "São encaminhadas para reciclagem e reaproveitamento de materiais" },
             { id: "d", texto: "São jogadas em rios e lagos" }
         ],
-        correta: "b"
+        correta: "c"
     }
 ];
 
