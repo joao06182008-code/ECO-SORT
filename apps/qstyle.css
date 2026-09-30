@@ -1,5 +1,10 @@
 body {
-    background: linear-gradient(135deg, #e8f5e9 0%, #3ca040 100%);}
+    background: linear-gradient(135deg, #e8f5e9 0%, #3ca040 100%);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;       /* Garante altura total da tela */
+    margin: 0;  }
 
 .quiz-card {
     background: #ffffff;
@@ -12,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    
 }
 
 
