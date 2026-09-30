@@ -122,21 +122,49 @@ function proximaPergunta() {
 // Exibe o resultado final ao concluir o quiz
 function exibirResultado() {
     const quizCard = document.querySelector('.quiz-card');
+
+    // Calcula a porcentagem
+    const porcentagem = Math.round((pontuacao / perguntas.length) * 100);
+
+    // Define ícone, título e mensagem de acordo com a pontuação
+    let icone = '🎉';
+    let titulo = 'Parabéns!';
+    let mensagem = 'Excelente trabalho! Você demonstra um ótimo conhecimento sobre a reciclagem e o descarte correto.';
+
+    if (porcentagem < 50) {
+        icone = '🌱';
+        titulo = 'Bom esforço!';
+        mensagem = 'Continue aprendendo! O planeta agradece cada pequeno gesto de conscientização.';
+    } else if (porcentagem < 80) {
+        icone = '👏';
+        titulo = 'Muito bem!';
+        mensagem = 'Você tem bons conhecimentos sobre o descarte e a reciclagem em Olinda!';
+    }
+
+    // Renderiza o resultado com estilos inline para garantir o alinhamento
     quizCard.innerHTML = `
-        <header class="quiz-header">
-            <h2>Quiz Concluído!</h2>
-        </header>
-        <section class="question-body" style="text-align: center; margin: 20px 0;">
-            <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                Você acertou <strong>${pontuacao}</strong> de <strong>${perguntas.length}</strong> perguntas.
+        <div style="text-align: center; padding: 10px 0;">
+            <div style="font-size: 3rem; margin-bottom: 8px;">${icone}</div>
+            
+            <h2 style="color: #1b5e20; font-size: 1.6rem; margin: 0 0 16px 0; font-weight: 700;">${titulo}</h2>
+            
+            <div style="background-color: #e8f5e9; border: 2px solid #66bb6a; border-radius: 12px; padding: 14px 20px; display: inline-block; margin-bottom: 16px;">
+                <span style="font-size: 1.8rem; font-weight: bold; color: #2e7d32; display: block;">${pontuacao} / ${perguntas.length}</span>
+                <span style="font-size: 0.85rem; color: #388e3c; font-weight: 600;">respostas corretas (${porcentagem}%)</span>
+            </div>
+
+            <p style="color: #4f4f4f; font-size: 0.95rem; line-height: 1.4; max-width: 360px; margin: 0 auto 20px auto;">
+                ${mensagem}
             </p>
-        </section>
-        <footer class="quiz-footer">
-            <a href="index.html" class="btn-secondary">Voltar ao Início</a>
-        </footer>
+
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 16px; margin-top: 10px;">
+                <a href="index.html" class="btn-primary" style="text-decoration: none; display: inline-block;">
+                    Voltar ao Início
+                </a>
+            </div>
+        </div>
     `;
 }
-
 // Event Listeners e Inicialização
 document.addEventListener('DOMContentLoaded', () => {
     carregarPergunta();
