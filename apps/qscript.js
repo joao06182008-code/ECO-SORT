@@ -21,6 +21,17 @@ const perguntas = [{
             { id: "d", texto: "Molhar em água salgada" }
         ],
         correta: "c"
+    },
+    {
+        categoria: "Eletrônicos",
+        pergunta: "Qual a posição do Brasil no ranking mundial de geração de lixo eletrônico?",
+        opcoes: [
+            { id: "a", texto: "1º lugar" },
+            { id: "b", texto: "5º lugar" },
+            { id: "c", texto: "10º lugar" },
+            { id: "d", texto: "15º lugar" }
+        ],
+        correta: "b"
     }
 ];
 
