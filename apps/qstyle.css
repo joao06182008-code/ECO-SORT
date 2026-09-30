@@ -1,9 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     background: linear-gradient(135deg, #e8f5e9 0%, #3ca040 100%);
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    min-height: 100vh;       /* Garante altura total da tela */
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
     margin: 0;  }
 
 .quiz-card {
