@@ -9,7 +9,8 @@ body {
     background: linear-gradient(135deg, #e8f5e9 0%, #3ca040 100%);
     color: #2e7d32;
     min-height: 100vh;
-    display: flex; /*Flexboxxingg*/
+    display: flex;
+    /*Flexboxxingg*/
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -42,7 +43,7 @@ p {
 }
 
 .images {
-    max-width: 100%;
+    max-width: 90%;
     height: fill;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -77,15 +78,12 @@ button:active {
     .container {
         padding: 30px 20px;
     }
-
     h1 {
         font-size: 1.8rem;
     }
-
     p {
         font-size: 1rem;
     }
-
     button {
         width: 100%;
         padding: 14px 20px;
