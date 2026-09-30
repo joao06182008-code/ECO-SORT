@@ -32,6 +32,28 @@ const perguntas = [{
             { id: "d", texto: "15º lugar" }
         ],
         correta: "b"
+    },
+    {
+        categoria: "Eletrônicos",
+        pergunta: "Qual destas atitudes é a mais recomendada ANTES de descartar um eletrônico que ainda funciona?",
+        opcoes: [
+            { id: "a", texto: "Vender para alguém que não tem um" },
+            { id: "b", texto: "Doar para instituições de caridade" },
+            { id: "c", texto: "Descartar no lixo comum do dia a dia" },
+            { id: "d", texto: "Mandar para o lixão sem apagar nada" }
+        ],
+        correta: "b"
+    },
+    {
+        categoria: "Eletrônicos",
+        pergunta: "O que acontece com as pilhas e baterias quando descartadas corretamente nos pontos de coleta?",
+        opcoes: [
+            { id: "a", texto: "Elas são enterradas em aterros sanitários" },
+            { id: "c", texto: "São queimadas em fornos industriais" },
+            { id: "b", texto: "São encaminhadas para reciclagem e reaproveitamento de materiais" },
+            { id: "d", texto: "São jogadas em rios e lagos" }
+        ],
+        correta: "b"
     }
 ];
 
