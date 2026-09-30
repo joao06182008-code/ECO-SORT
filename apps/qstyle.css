@@ -8,10 +8,11 @@
 body {
     background: linear-gradient(135deg, #e8f5e9 0%, #3ca040 100%);
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    min-height: 100vh;      
-    margin: 0;  }
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
 .quiz-card {
     background: #ffffff;
@@ -25,7 +26,6 @@ body {
     flex-direction: column;
     gap: 24px;
 }
-
 
 .quiz-info {
     display: flex;
@@ -58,7 +58,6 @@ body {
     transition: width 0.3s ease;
 }
 
-
 .question-body h2 {
     color: #1b5e20;
     font-size: 1.3rem;
@@ -71,7 +70,6 @@ body {
     flex-direction: column;
     gap: 12px;
 }
-
 
 .option-card {
     display: flex;
@@ -120,7 +118,7 @@ body {
     background-color: #e8f5e9;
 }
 
-.option-card input[type="radio"]:checked + .custom-radio {
+.option-card input[type="radio"]:checked+.custom-radio {
     background-color: #2e7d32;
     color: #ffffff;
 }
@@ -151,12 +149,79 @@ body {
     .quiz-card {
         padding: 20px;
     }
-
     .question-body h2 {
         font-size: 1.15rem;
     }
-
     .option-card {
         padding: 12px;
     }
+}
+
+
+/* Estilo do Rodapé */
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+/* Botão Principal Verde (Próxima →) */
+
+.btn-primary {
+    background-color: #2e7d32;
+    /* Verde principal */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(46, 125, 50, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.btn-primary:hover {
+    background-color: #1b5e20;
+    /* Verde mais escuro no hover */
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+    transform: translateY(-2px);
+}
+
+
+/* Efeito ao clicar */
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2);
+}
+
+
+/* Botão Secundário (Sair) */
+
+.btn-secondary {
+    color: #555555;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+    color: #d32f2f;
+    /* Fica levemente vermelho ao passar o mouse para indicar saída */
 }
