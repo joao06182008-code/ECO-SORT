@@ -9,7 +9,8 @@ body {
     background: linear-gradient(135deg, #e8f5e9 0%, #3ca040 100%);
     color: #2e7d32;
     min-height: 100vh;
-    display: flex; /*Flexboxxingg*/
+    display: flex;
+    /*Flexboxxingg*/
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -42,7 +43,7 @@ p {
 }
 
 .images {
-    max-width: 100%;
+    max-width: 90%;
     height: fill;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -77,17 +78,49 @@ button:active {
     .container {
         padding: 30px 20px;
     }
-
     h1 {
         font-size: 1.8rem;
     }
-
     p {
         font-size: 1rem;
     }
-
     button {
         width: 100%;
         padding: 14px 20px;
+    }
+}
+
+
+/* Responsividade para Celulares - Tela Inicial */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 16px !important;
+        border-radius: 16px !important;
+        box-sizing: border-box;
+    }
+    .container h1 {
+        font-size: 1.5rem !important;
+    }
+    .container p {
+        font-size: 0.95rem !important;
+        line-height: 1.4;
+    }
+    .images {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+        border-radius: 12px;
+    }
+    .container button {
+        width: 100% !important;
+        /* Faz o botão ocupar a largura inteira no celular */
+        padding: 14px !important;
+        font-size: 1rem !important;
     }
 }
